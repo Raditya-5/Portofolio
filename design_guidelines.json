@@ -1,0 +1,102 @@
+{
+  "project_context": {
+    "name": "Raditya Putra Setiawan Portfolio",
+    "type": "Portfolio / Marketing",
+    "theme": "Dark neutral single theme (no toggle)",
+    "language": "Bahasa Indonesia",
+    "vibe": "Awwwards Site-of-the-Day, premium, kinetic, deliberate craft, cinematic."
+  },
+  "typography": {
+    "headings": {
+      "family": "'Space Grotesk', sans-serif",
+      "weights": ["500", "700"],
+      "styling": "tracking-tighter, leading-none, large scale. Use responsive clamp sizes up to text-6xl+ for H1. No generic sizes.",
+      "import_url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+    },
+    "body": {
+      "family": "'Manrope', sans-serif",
+      "weights": ["400", "500"],
+      "styling": "tracking-normal, leading-relaxed, text-base to text-lg.",
+      "import_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap"
+    },
+    "mono_accent": {
+      "family": "'JetBrains Mono', monospace",
+      "weights": ["400"],
+      "styling": "tracking-widest, uppercase, text-xs. For manifesto numbers (e.g. 01 TENTANG).",
+      "import_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap"
+    }
+  },
+  "colors": {
+    "background_base": "#0F1115",
+    "surface": "#1A1D24",
+    "text_primary": "#E6E8EC",
+    "text_secondary": "#8B92A5",
+    "accent_cyan": "#22D3EE",
+    "border_subtle": "rgba(255, 255, 255, 0.05)",
+    "usage_rules": "Strict monochrome structural foundation with #22D3EE used as a rare, high-impact laser accent."
+  },
+  "visual_enhancers": {
+    "surface_strategy": "Grid Borders and Tracing Beam mix. 1px subtle borders for bento boxes. Cards have no generic drop shadows.",
+    "glassmorphism": "Used ONLY on the sticky navbar: backdrop-blur-xl bg-[#0F1115]/80 border-b border-white/5.",
+    "textures": "Add subtle SVG noise overlay fixed to screen pointer-events-none."
+  },
+  "grids_and_layouts": {
+    "general": "High negative space. Generous padding (py-24 to py-32). Numbered manifesto layouts.",
+    "hero": "Full height (min-h-screen). Asymmetrical alignment. Huge typography.",
+    "skills_grid": "Mode A 'Tetris Grid' (Bento). grid-cols-1 md:grid-cols-12 gap-6. Mix tall and wide cards.",
+    "education_timeline": "Vertical asymmetrical layout. Left side: Timeline rod. Right side: Content."
+  },
+  "motion": {
+    "global": "lenis smooth scroll is MANDATORY. Framer Motion for reveals.",
+    "kinetic_hero": "Line-by-line masked text reveal on load using framer-motion staggerChildren and overflow-hidden wrappers.",
+    "scroll_reveals": "whileInView drift up 40px and fade in.",
+    "marquee": "react-fast-marquee. Very slow, continuous. text-8xl outline text.",
+    "micro_interactions": "Buttons scale to 0.98 on tap, hover reveals subtle cyan glow."
+  },
+  "component_strategy": {
+    "navbar": "Sticky, glassmorphism, z-50. Include Logo, Links, and CTA button.",
+    "about_section": "Split layout. Left: Sticky chapter marker '01 Tentang'. Right: Spotlight portrait and bio.",
+    "skills_section": "Bento grid with visual icons and animated progress bars.",
+    "projects_section": "Placeholder 'Segera Hadir' (Coming Soon) with ASCII art or massive outline text.",
+    "contact_form": "Customized Shadcn-like raw inputs (Tailwind). Submit triggers mailto: function.",
+    "social_links": "Sleek row of icons (GitHub, LinkedIn, Instagram, Email, WhatsApp) in footer."
+  },
+  "accessibility": {
+    "contrast": "Ensure text meets minimum 4.5:1 ratio.",
+    "data_testid": "MANDATORY on all links, buttons, and form inputs."
+  },
+  "media": {
+    "image_treatment": "Photography MUST be deliberately treated. Grayscale or darkened blend modes. Spotlight gradients."
+  },
+  "3d_libraries": {
+    "recommendation": "Use framer-motion 3D or react-spring-parallax for subtle parallax hero moment."
+  },
+  "image_urls": {
+    "hero_abstract_bg": {
+      "url": "https://images.unsplash.com/photo-1709626011485-6fe000ea2dbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMDNkJTIwZ2VvbWV0cnklMjBjeWFuJTIwbGlnaHRpbmd8ZW58MHx8fGJsYWNrfDE3ODcyNzY5NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Black and blue abstract geometric background. Use as heavily blurred or parallax background asset.",
+      "category": "Hero Section / Background"
+    },
+    "profile_photo": {
+      "url": "https://images.unsplash.com/photo-1768398222507-9f551fa0e9e8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBhc2lhbiUyMG1hbiUyMHBvcnRyYWl0JTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg3Mjc2OTYxfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional Asian man's face illuminated in dramatic low light.",
+      "category": "About Section / Hero Profile"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required libraries: yarn add framer-motion @studio-freight/lenis react-fast-marquee @phosphor-icons/react clsx tailwind-merge",
+    "Configure Tailwind base, surface, accent colors, and custom fonts.",
+    "Implement Lenis smooth scroll globally.",
+    "Hero structure: Create a Kinetic Typography loader/reveal. Use Framer Motion for line-by-line reveal.",
+    "All copy MUST be in Bahasa Indonesia.",
+    "NEVER leave a transparent background on the sticky navbar. Use backdrop-blur."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid the 'AI slop' aesthetic. Prioritize asymmetrical layouts.",
+    "Use 2-3x more spacing to create a premium feel.",
+    "Do NOT center align the app container.",
+    "Every interaction must have a micro-animation.",
+    "Test all interactive elements with 'data-testid' attributes."
+  ],
+  "general_ui_ux_guidelines": "Ensure high contrast. Focus states must be highly visible (cyan ring). Include skip-to-content links."
+}
